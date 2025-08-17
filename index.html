@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <title>Spinner Fighter Arena</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: radial-gradient(circle at top, #1e1e2f, #111);
+      color: #fff;
+    }
+
+    header {
+      background-color: #ff4d4d;
+      padding: 30px;
+      text-align: center;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 3em;
+    }
+
+    header p {
+      font-size: 1.2em;
+      margin-top: 10px;
+    }
+
+    nav {
+      background-color: #222;
+      display: flex;
+      justify-content: center;
+      padding: 10px 0;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      padding: 10px 20px;
+    }
+
+    nav a:hover {
+      background-color: #333;
+    }
+
+    main {
+      max-width: 1000px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+
+    .spinner-card {
+      background-color: #2a2a3d;
+      border-radius: 10px;
+      padding: 20px;
+      margin-bottom: 30px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.5);
+      transition: transform 0.2s ease;
+    }
+
+    .spinner-card:hover {
+      transform: scale(1.02);
+    }
+
+    .spinner-card img {
+      width: 100%;
+      border-radius: 10px;
+      max-height: 300px;
+      object-fit: cover;
+    }
+
+    .spinner-card h2 {
+      margin-top: 15px;
+      color: #ffcc00;
+    }
+
+    .spinner-card p {
+      margin-bottom: 10px;
+    }
+
+    button {
+      background-color: #ff4d4d;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      font-weight: bold;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #e63b3b;
+    }
+
+    footer {
+      background-color: #111;
+      text-align: center;
+      padding: 20px;
+      margin-top: 40px;
+      font-size: 0.9em;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Spinner Fighter Arena</h1>
+    <p>Бийся на арені спіннерів! Вибери свого чемпіона та здобудь перемогу.</p>
+  </header>
+
+  <nav>
+    <a href="#">Головна</a>
+    <a href="#">Спіннери</a>
+    <a href="#">Арена</a>
+    <a href="#">Контакти</a>
+  </nav>
+
+  <main>
+    <section class="spinner-card">
+      <img src="file:///C:/Users/Karoline/Downloads/jPIGeXI867da6e32c4d40_1742368306.webp" alt="Storm Blade">
+      <h2>🌀 Storm Blade</h2>
+      <p>Швидкий і агресивний спіннер, ідеальний для блискавичних атак.</p>
+      <button onclick="startBattle('Storm Blade')">Битися</button>
+    </section>
+
+    <section class="spinner-card">
+      <img src="https://image.winudf.com/v2/image/Y29tLnRocmVlc3dvcmRzdHVkaW8uYmxhZGVib3VuY2VyX2ljb25fMTU0MDM4ODk4NV8wNzk/icon.png?w=312&fakeurl=1" alt="Crimson Fury">
+      <h2>🔥 Crimson Fury</h2>
+      <p>Потужний спіннер із вибуховими ударами та сталевими лезами.</p>
+      <button onclick="startBattle('Crimson Fury')">Битися</button>
+    </section>
+
+    <section class="spinner-card">
+      <img src="https://m.media-amazon.com/images/I/712VIdAFVNL._UF350,350_QL80_.jpg" alt="Golden Phantom">
+      <h2>⚡ Golden Phantom</h2>
+      <p>Легендарний спіннер, що поєднує швидкість і стратегію. Ідеальний для тактичної гри.</p>
+      <button onclick="startBattle('Golden Phantom')">Битися</button>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Spinner Fighter Arena. Усі права захищено.</p>
+  </footer>
+
+  <script>
+    function startBattle(spinnerName) {
+      const phrases = [
+        "Починається епічна битва!",
+        "Готовий до бою?",
+        "Турбооберт! ⚙️",
+        "Суперудар активовано!",
+        "🌀 Супер оберт на максимум!"
+      ];
+      const randomPhrase = phrases[Math.floor(Math.random() * phrases.length)];
+      alert(spinnerName + " вступає в бій! " + "\n" + randomPhrase);
+    }
+  </script>
+
+</body>
+</html>
